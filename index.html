@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="assets\css\style.css">
 </head>
 
-<body class="dark-theme">
+<body class="light-theme">
 
     <header>
         <audio id="music">
-            <source src="assets\assets_musics_normal-world.mpeg" />
+            <source src="assets\normal-world.mpeg" />
         </audio>
 
         <div class="header-content">
@@ -96,14 +96,15 @@
 
                 <div class="form-container">
                     <form>
+
                         <label for="txtName">Nome Completo</label>
                         <input type="text" name="name" id="txtName">
 
                         <label for="txtEmail">Email</label>
-                        <input type="text" name="email" id="txtEmail">
+                        <input type="email" name="email" id="txtEmail">
 
                         <label for="txtLevel">Level</label>
-                        <input type="text" name="Level" id="txtLevel">
+                        <input type="number" name="Level" id="txtLevel">
 
                         <label for="txtCharacter">Personagem</label>
                         <textarea name="character" cols="30" rows="10" id="txtCharacter"></textarea>
@@ -142,14 +143,26 @@
             document.body.classList.toggle('light-theme');
 
             const theme = document.body.classList[0];
+
+            const music = theme === 'light-theme' ? 'normal-world.mpeg' : 'inverted-world.mpeg'
+
+            const audio = document.getElementById('music');
+            audio.src = `assets/musics/${music}`;
+
             const music = theme === 'light-theme' ? 'normal-world.mpeg' : "inverted-world.mpeg"
 
             const audio = document.getElementById('music');
             audio.src = 'assets/musics/${music}';
+
             audio.play();
             audio.volume = 0.2;
         }
     </script>
+
+
+    <script type="module" src="assets\js\main.js"></script>
+
+
 </body>
 
 </html>
