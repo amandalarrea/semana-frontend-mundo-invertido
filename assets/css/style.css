@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
 
 :root {
@@ -79,11 +79,12 @@ h3 {
   font-size: 3rem;
   color: var(--primary-color);
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 p {
   color: var(--highlight-color);
+  margin-top: 5px;
 }
 
 p,
@@ -91,6 +92,7 @@ input,
 textarea,
 label {
   font-family: "Roboto", sans-serif;
+  font-size: large;
 }
 
 button {
@@ -311,6 +313,8 @@ section {
 
 #section-form h2 {
   width: 600px;
+  margin-bottom: 0;
+
 }
 
 #section-form .form-content h3 {

@@ -13,9 +13,6 @@
 <body class="light-theme">
 
     <header>
-        <audio id="music">
-            <source src="assets/musics/normal-world.mpeg" />
-        </audio>
 
         <div class="header-content">
             <img img class="container reveal" src="assets\images\banner\logo.svg"
@@ -129,6 +126,8 @@
         <img src="assets\images\footer\logo.svg" alt="Logo DIO" />
     </footer>
 
+    <audio id='music' src="assets/musics" autoplay></audio>
+
     <script>
         window.addEventListener('click', function () {
             const audio = document.getElementById('music');
@@ -136,26 +135,15 @@
             audio.volume = 0.2;
         })
 
-        function switchTheme()  {
+        function switchTheme() {
             document.body.classList.toggle('dark-theme');
             document.body.classList.toggle('light-theme');
 
-    
-
             const theme = document.body.classList[0];
-
-            const musics = theme === 'light-theme' ? 'normal-world.mpeg' : 'inverted-world.mpeg'
-
-            const audios = document.getElementById('music');
-            audio.src = `assets/musics/${music}`;
-
-            const music = theme === 'light-theme' ? 'normal-world.mpeg' : "inverted-world.mpeg"
+            const music = theme === 'light-theme' ? 'normal-world.mpeg' : 'inverted-world.mpeg';
 
             const audio = document.getElementById('music');
-            audio.src = 'assets/musics/${music}';
-
-            
-
+            audio.src = `assets/musics/${music}`;
             audio.play();
             audio.volume = 0.2;
         }
@@ -164,7 +152,7 @@
 
     <script type="module" src="assets\js\main.js"></script>
 
-    <script src="assets\js\animation.js"></script>
+    <script src="assets\css\css animation.js"></script>
 
 
 </body>
