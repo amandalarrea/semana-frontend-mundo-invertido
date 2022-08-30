@@ -8,10 +8,6 @@
   --field-background-color: #000;
 }
 
-@media only screen and (max-device-width: 900px) {
-  .section { width:100%; }
-  }
-
 .light-theme {
   --page-background: linear-gradient(180deg,
       #ffffff 0%,
@@ -70,7 +66,6 @@
   margin: 0;
   box-sizing: border-box;
   transition: 1s;
-  
 }
 
 body {
