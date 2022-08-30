@@ -8,6 +8,10 @@
   --field-background-color: #000;
 }
 
+@media only screen and (max-device-width: 900px) {
+  /* .menu { width:100%; } */
+  }
+
 .light-theme {
   --page-background: linear-gradient(180deg,
       #ffffff 0%,
@@ -266,42 +270,6 @@ section {
   border: 2px solid;
   border-image: linear-gradient (var--(primary-color) var(--primary-colorcontrast));
   border-image-slice: 10;
-}
-
-#section-stranger-things-gallery {
-  width: 100%;
-  justify-content: center;
-}
-
-#section-stranger-things-gallery .container {
-  width: 100%;
-}
-
-#section-stranger-things-gallery .container h2 {
-  width: full;
-  text-align: center;
-}
-
-#section-stranger-things-gallery .gallery-container {
-  display: flex;
-  gap: 50px;
-  padding-left: 20px;
-}
-
-#section-stranger-things-gallery .gallery-image {
-  width: 100%;
-  height: 250px;
-  outline: 20px solid var(--gallery-background-color);
-  border: 3px solid var(--primary-color);
-  box-sizing: initial;
-
-}
-
-#section-stranger-things-gallery .gallery-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border: 10px solid var(--highlight-color);
 }
 
 #section-form {
